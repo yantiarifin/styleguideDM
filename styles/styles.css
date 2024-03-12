@@ -1,0 +1,37 @@
+@import url(/styles/fonts.css);
+@import url(/styles/colors.css);
+@import url(/styles/typography.css);
+@import url(/styles/buttons.css);
+@import url(/styles/padding-margin.css);
+@import url(/styles/goodiebag.css);
+@import url(/styles/navigation.css);
+@import url(/styles/materialize.css);
+@import url(/styles/styleguide.css);
+
+
+body {
+    height: 100%;
+    margin: 0px;
+}
+
+html {
+    font-family: "MaisonNeueBook";
+    font-size: 70%;
+    height: 100%;
+    line-height: 1.15;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+    scroll-behavior: smooth;
+
+}
+
+:root {
+
+    /* Shadows & Lines */
+    --dropshadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --edgeLine: #7B8289 1px solid;
+    --radius: 6px
+}

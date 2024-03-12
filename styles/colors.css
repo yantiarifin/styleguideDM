@@ -1,0 +1,113 @@
+:root {
+    --dm-black: #262c37;
+    --brand-red: #EB483F;
+    --brand-red-hover: #ae312b;
+    --gray-darker: #7B8289;
+    --gray-dark: #a9b0b7;
+    --gray: #dce0e2;
+    --gray-light: #EBEFF2;
+    --gray-lighter: #f2f2f6;
+    --action-blue: #00a2ff;
+    --action-hover: #0274b6;
+    --error-red: #FF0000;
+    --error-hover: #b80000;
+    --warning-yellow: #ffd53f;
+    --warning-yellow-hover: #c8a21a;
+    --success-green:#7ed321;
+    --success-green-hover:#508b11;
+    --heat-orange: #ff9000;
+    --cooling-blue: #00E1FF;
+}
+
+.dark-text {
+    color: var(--dm-black);
+}
+
+.light-text {
+    color: var(--gray-lighter);
+}
+
+.gray-text {
+    color: var(--gray-darker);
+}
+
+.brand-red-text {
+    color: var(--brand-red);
+}
+
+.dm-black {
+    background-color: var(--dm-black);
+}
+
+.gray-darker {
+    background-color:var(--gray-darker);
+}
+
+.gray-dark {
+    background-color: var(--gray-dark);
+}
+
+.gray {
+    background-color: var(--gray);
+}
+
+.gray-light {
+    background-color: var(--gray-light);
+}
+
+.gray-lighter {
+    background-color: var(--gray-lighter);
+}
+
+.success-green {
+    background-color: var(--success-green);
+}
+
+.success-green-hover {
+    background-color: var(--success-green-hover);
+}
+
+
+.heat-orange {
+    background-color: var(--heat-orange);
+}
+
+.cool-aqua {
+    background-color: var(--cooling-blue);
+}
+
+.error-red {
+    background-color: var(--error-red);
+}
+
+.warning-yellow {
+    background-color: var(--warning-yellow);
+}
+
+.warning-yellow-hover {
+    background-color: var(--warning-yellow-hover);
+}
+
+.brand-red {
+    background-color: var(--brand-red);
+}
+
+.brand-red-hover {
+    background-color: var(--brand-red-hover);
+}
+
+.action-blue {
+    background-color: var(--action-blue);
+}
+
+.action-blue-hover {
+    background-color: var(--action-hover);
+}
+
+.error-red {
+    background-color: var(--error-red);
+}
+
+.error-red-hover {
+    background-color: var(--error-hover);
+}

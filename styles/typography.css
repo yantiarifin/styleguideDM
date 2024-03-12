@@ -1,0 +1,150 @@
+
+h1 {
+    font-size: 3.8rem;
+    font-family: "MaisonNeueDemi";
+    line-height: 110%;
+    margin: 2.8rem 0 1.68rem 0;
+  }
+  
+  h2 {
+    font-size: 3.2rem;
+    line-height: 110%;
+    margin: 2.3733333333rem 0 1.424rem 0;
+  }
+  
+  h3 {
+    font-size: 2.8rem;
+    line-height: 110%;
+    margin: 1.9466666667rem 0 1.168rem 0;
+  }
+  
+  h4 {
+    font-size: 2rem;
+    line-height: 110%;
+    margin: 1.52rem 0 0.912rem 0;
+  }
+  
+  h5 {
+    font-size: 1.64rem;
+    line-height: 110%;
+    margin: 1.0933333333rem 0 0.656rem 0;
+  }
+  
+  h6 {
+    font-size: 1.15rem;
+    line-height: 110%;
+    margin: 0.7666666667rem 0 0.46rem 0;
+  }
+  
+  
+h1, h2, h3 {
+    font-weight: 800;
+    font-kerning: -20rem;
+}
+
+h4, h5, h6 {
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: "MaisonNeueBook";
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+}
+
+label {
+    font-family: "MaisonNeueBook";
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: var(--gray-darker);
+    text-transform: uppercase;
+}
+
+.jumbo {
+    font-family: "MaisonNeueDemi";
+    font-size: 3.6rem;
+    letter-spacing: -1px;
+    line-height: 5rem;
+}
+
+
+.big-header {
+    font-family: "MaisonNeueDemi";
+    font-size: 2.8rem;
+    letter-spacing: -.35px;
+    line-height: 2.8rem;
+}
+
+.main-header {
+    font-family: "MaisonNeueBook";
+    font-size: 2.4rem;
+    letter-spacing: -.02em;
+    line-height: 3rem;
+}
+
+.main {
+    font-family: "MaisonNeueDemi";
+    font-size: 1.8rem;
+    letter-spacing: -.2px;
+    line-height: 2.4rem;
+}
+
+.submain {
+    font-family: "MaisonNeueBook";
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.textlink {
+    font-family: "MaisonNeue";
+    font-size: 1.4rem;
+    color: #00A2ff;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+}
+
+
+.label {
+    font-family: "MaisonNeue";
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #A9B0B7;
+    text-transform: uppercase;
+}
+
+.smalltext {
+    font-family: "MaisonNeueLight";
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.legalese {
+    font-family: "MaisonNeueLightItalic";
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+/* FONT HELPERS */
+.thicker {
+    font-family: "MaisonNeueDemi";
+}
+
+.thinner {
+    font-family: "MaisonNeueBook";
+}
+
+.superthinner {
+    font-family: "MaisonNeueLight";
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.no-wrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

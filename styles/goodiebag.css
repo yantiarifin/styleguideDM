@@ -1,0 +1,28 @@
+.mockheader {
+	height: 3rem;
+	width: 100%;
+	background-color: var(--dm-black);
+	padding: 1rem;
+	position: relative;
+}
+
+.float-right-vcenter {
+	position: absolute;
+	right: 1rem;
+	top: 1.2rem;
+	bottom: 0;
+	margin:auto 0;
+	height: fit-content;
+}
+
+.col .row {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .flex-left-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }

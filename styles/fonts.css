@@ -1,0 +1,20 @@
+  
+  @font-face {
+    font-family: "MaisonNeueBook";
+    src: local(MaisonNeueBook), url("../styles/MaisonNeue/MaisonNeueBook.woff"), format("woff");
+  }
+
+  @font-face {
+    font-family: "MaisonNeueDemi";
+    src: local(MaisonNeueDemi), url("../styles/MaisonNeue/MaisonNeueDemi.woff"), format("woff");
+  }
+
+  @font-face {
+    font-family: "MaisonNeueLight";
+    src: local(MaisonNeueLight), url("../styles/MaisonNeue/MaisonNeueLight.woff"), format("woff");
+  }
+
+  @font-face {
+    font-family: "MaisonNeueLightItalic";
+    src: local(MaisonNeueLightItalic), url("../styles/MaisonNeue/MaisonNeueLightItalic.woff");
+  }

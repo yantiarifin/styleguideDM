@@ -1,0 +1,37 @@
+
+.button {
+    height: 3em;
+    width: 8em;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    border-radius: 0.25rem;
+    background-color: var(--action-blue);
+    color: white;
+    font-family: "MaisonNeueDemi";
+    text-align: center;
+    font-weight: normal;
+    cursor: pointer;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    box-shadow: var(--dropshadow);
+    transition: background-color 0.3 ease;
+}
+
+.button:hover {
+    background-color: var(--action-hover)
+}
+
+.button:active {
+    background-color: var(--action-blue);
+    box-shadow: none;
+    transform: scale(98%);
+}
+
+.button.caution {
+    background-color: var(--error-red);
+}
+
+.button.caution:hover {
+    background-color: var(--error-hover);
+}

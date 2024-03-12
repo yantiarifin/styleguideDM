@@ -1,0 +1,44 @@
+:root {
+	--navbar-height: 5.7rem;
+}
+
+div.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	height: 100vh;
+	background-color:none;
+}
+
+#nav-mobile {
+  width:50%;
+  max-width: 240px;
+  a {
+    font-size: 1.5rem;
+    height: 5rem;
+  }
+  .divider {
+    width: 80%;
+    margin: 2.0rem auto;
+  }
+  li {
+	font-size: 1rem; 
+    line-height: 5rem;
+    a:hover {
+      color: var(--brand-red)
+    }
+    .external-link-icon{
+      display: inline;
+      background-image: url('/svgs/exit-white.svg');
+      background-position: 50% 100%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-left: 30px;
+    }
+  }
+}
+
+#nav-mobile {
+  z-index: 1400;
+}
