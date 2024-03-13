@@ -50,13 +50,14 @@ h4, h5, h6 {
 
 p {
     font-family: "MaisonNeueBook";
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 1.9rem;
 }
 
 p > .smaller {
     font-size: 1.2rem;
 }
+
 
 small {
     font-size: 1;

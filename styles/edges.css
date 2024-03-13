@@ -5,34 +5,41 @@
     --shadow-small: rgba(0, 0, 0, 0.35) 0px 0.0625em 0.1em;
     --shadow-inset: rgba(255, 255, 255, 0.35) 0px 0px 3px 2px inset;
     --shadow-pressed: rgba(255, 255, 255, 0.35) 0px 0px 3px 2px inset;
+    --shadow-transition: 80ms;
+    --border: 1px solid var(--gray);
 }
 
 /* Shadows */
 
 .shadow-deep {
     box-shadow: var(--shadow-deep);
+    transition-duration: var(--shadow-transition);
 }
 
 .shadow {
     box-shadow: var(--shadow);
+    transition-duration: var(--shadow-transition);
 }
 
 .shadow-small {
     box-shadow: var(--shadow-small);
+    transition-duration: var(--shadow-transition);
 }
 
 .shadow-pressed {
     box-shadow: var(--shadow-pressed);
+    transition-duration: var(--shadow-transition);
 }
 
 .shadow-inset {
     box-shadow: var(--shadow-inset);
+    transition-duration: var(--shadow-transition);
 }
 /* Outlines */
 .add-border {
-    border: 1px solid var(--gray);
+    border: var(--border);
 } 
 
 .outline {
-    border: 33 1px solid var(--gray);
+    border: var(--border);
 }

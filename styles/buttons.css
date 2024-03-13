@@ -1,13 +1,24 @@
+:root {
+    --f-small: 1.4rem;
+    --f-medium: 1.8rem;
+    --f-large: 2rem;
+    --i-small: 2rem;
+    --i-medium: 3rem;
+    --i-large: 4rem;
+}
+
 
 .button {
     height: 3em;
-    width: 8em;
+    width: 100%;
+    max-width: 400px;
     padding: 0.3rem;
     margin: 0.3rem;
     border-radius: 0.25rem;
     background-color: var(--action-blue);
     color: white;
     font-family: "MaisonNeueDemi";
+    font-size: 1.5rem;
     text-align: center;
     font-weight: normal;
     cursor: pointer;
@@ -34,4 +45,104 @@
 
 .button.caution:hover {
     background-color: var(--error-hover);
+}
+
+.button.secondary {
+    background-color: white;
+    border: 1px solid var(--action-blue);
+    color: var(--action-blue);
+}
+
+.button.secondary:hover {
+    background-color: white;
+    background-color: var(--gray-lighter);
+}
+
+/* Freeform Buttons */
+
+.btn-freeform {
+    max-width: 40rem;
+    max-height: 30rem;
+    background-color: var(--gray-light);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dm-black);
+    text-align: center;
+    padding: 1rem !important;
+    box-shadow: var(--shadow-small);
+    transition-duration: var(--shadow-transition);
+    cursor:pointer;
+    letter-spacing: -0.5px;
+    border-radius: var(--radius);
+    border: var(--border);
+
+    &:hover {
+        background-color: white;
+    }
+    &:active {
+        box-shadow: var(--shadow-inset);
+        background-color: var(--gray-light);
+        transform: scale(98%);
+    }
+}
+
+
+.btn-freeform.small {
+    font-size: var(--f-small)
+}
+
+.btn-freeform.medium {
+    font-size: var(--f-medium);
+}
+
+.btn-freeform.large {
+    font-size: var(--f-large);
+
+}
+
+.i-small {
+    font-size: var(--i-small);
+}
+
+.i-medium {
+    font-size: var(--i-medium);
+}
+
+.i-large {
+    font-size: var(--i-large);
+}
+
+/* Inline buttons - for cards */
+
+.btn-inline {
+    border: var(--border);
+    background-color: transparent;
+    padding: 0.6rem;
+    border-radius: var(--radius);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    margin: 0.3rem;
+    cursor: pointer;
+    box-shadow: var(--shadow-small);
+
+    &:hover {
+        background-color: var(--gray);
+    }
+    
+    &:active {
+        background-color: var(--gray);
+        box-shadow: var(--shadow-inset);
+        transform: scale(98%);
+    }
+}
+
+.isDisabled {
+    cursor: not-allowed;
+    opacity: 0.35;
+    pointer-events: none;
+    box-shadow: none;
+    border: var(--border);
 }
