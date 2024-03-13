@@ -1,0 +1,96 @@
+/* Important, do not assign width or margins to tiles, or they won't justify left and right per row */
+
+:root {
+    --grid-repeat-2: repeat(2, 1fr);
+    --grid-repeat-3: repeat(3, 1fr);
+    --grid-repeat-4: repeat(4, 1fr);
+    --grid-repeat-5: repeat(5, 1fr);
+    --grid-repeat-6: repeat(6, 1fr);
+    --grid-70-30: repeat(2, 70% 30%);
+    --grid-30-70: repeat(2, 30% 70%);
+    --grid-20-80: repeat(2, 20% 80%);
+    --grid-80-20: repeat(2, 80% 80%);
+    --gap: 2rem;
+}
+
+
+/* Class names correspond with maximum number of tiles per row at it's widest */
+/* For all cases, there will be 1 tile per row if under 600px */
+
+.grid6,
+.grid5,
+.grid4,
+.grid3,
+.grid2 {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    column-gap: var(--gap);
+    row-gap: var(--gap);
+    height: fit-content;
+}
+
+/* For the following, number of tiles per row will be 2 if => 600px but < 900px */
+@media (min-width: 600px) {
+    .grid6,
+    .grid5,
+    .grid4,
+    .grid3 {
+        grid-template-columns: var(--grid-repeat-2) !important;
+    }
+}
+
+/*  Tiles per row at => 900px */
+@media (min-width: 900px) {
+    .grid6 {
+        grid-template-columns: var(--grid-repeat-2) !important;
+    }
+    .grid5 {
+        grid-template-columns: var(--grid-repeat-5) !important;
+    }
+    .grid4 {
+        grid-template-columns: var(--grid-repeat-4) !important;
+    }
+    .grid3 {
+        grid-template-columns: var(--grid-repeat-3) !important;
+    }
+    .grid2 {
+        grid-template-columns: var(--grid-repeat-2) !important;
+    }
+    .grid-70-30 {
+        grid-template-columns: var(--grid-70-30) !important;
+    }
+    .grid-30-70 {
+        grid-template-columns: var(--grid-30-70) !important;
+    }
+    .grid-20-80 {
+        grid-template-columns: var(--grid-20-80) !important;
+    }
+    .grid-80-20 {
+        grid-template-columns: var(--grid-80-20) !important;
+    }
+}
+
+.grid-70-30,
+.grid-30-70,
+.grid-20-80,
+.grid-80-20 {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    column-gap: 0;
+    row-gap: 0;
+    height: fit-content;
+    grid-template-columns:none;
+}
+
+
+/* Gap Overrides */
+
+.rm-col-gap {
+    column-gap: 0rem !important;
+}
+
+.rm-row-gap {
+    row-gap: 0rem !important;
+}

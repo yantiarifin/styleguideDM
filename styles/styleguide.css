@@ -127,7 +127,7 @@ pre {
 	white-space: pre-wrap;
 	font-size: 1.2rem;
     line-height: 1.8rem;
-	background-color: #f2f6f6;
+	background-color: var(--gray-lighter);
 	color: darkcyan;
 	height: 100%;
 	max-width: 60rem;
@@ -141,7 +141,10 @@ pre {
 	max-width: 400px;
 }
 
-
+code {
+	background-color: var(--gray-lighter);
+	color: darkcyan;
+}
 
 .legalese {
 	font-family: "MaisonNeueLightItalic";
@@ -273,38 +276,6 @@ pre {
 }
 
 
-/* // TEST
-.boxybox {
-	height: 20rem;
-	position: relative;
-	background-color: $dm-gray-lighter;
-	border: $border-outline;
-	box-shadow: $shadow-shallow;
-	transition: $shadow-transition !important;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 1rem;
-
-	&:hover {
-		background-color: white;
-	}
-
-	&:active {
-		background-color: $dm-gray-neutral;
-		box-shadow: $shadow-inset;
-	}
-}
-
-
-.plainoldbox {
-	height: 20rem;
-	padding: 1rem;
-	background-color: $dm-gray-lighter;
-	border: $border-outline;
-	position: relative;
-}
-
 .mocktile {
 	height:16rem;
 	display: flex;
@@ -312,7 +283,7 @@ pre {
 	align-items: center;
 	padding: 1rem;
 	color: white;
-	background-color: $dm-gray-darker;
+	background-color: var(--gray-darker);
 	position: relative;
 }
 
@@ -320,30 +291,21 @@ pre {
 	height: 10rem;
 	width: 100%;
 	padding: 1rem;
-	background-color: $dm-gray-neutral;
+	background-color: var(--gray);
 }
 
-.smallbox-light {
-	@extend.smallbox;
-	background-color: $dm-gray-lighter !important;
+.light {
+	background-color: var(--gray-lighter);
 }
 
 .make-inline {
 	display: inline !important;
 }
 
-.make-relative {
-	position:  relative !important;
-
-}
-
-.make-ratio-1 {
-    aspect-ratio: 1/1 !important;
-}
 
 
 .example {
-	background-color: $dm-gray-base;
+	background-color: var(--dm-black);
 	color: white;
 	width: 4rem;
 	aspect-ratio: 1/1;
@@ -360,4 +322,28 @@ pre {
 .simple-container {
 	padding: 1rem;
 	width: fit-content;
-} */
+}
+
+.typesample {
+	max-width: 60rem;
+	display: block !important;
+	text-align: left;
+	margin-bottom: 1rem !important;
+	border: 1px solid #dce0e2;
+	padding: 0.5rem;
+	display: inline-block;
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.boxit {
+	border: 1px solid var(--gray-darker);
+	padding: 0.5rem;
+	display: inline-block;
+	text-align: center;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
