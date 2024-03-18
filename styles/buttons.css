@@ -87,6 +87,19 @@
     }
 }
 
+.btn-freeform.nav {
+    border-radius: 0px !important;
+    position: sticky;
+    display: none;
+    width: 44px;
+    height: 44px;
+}
+
+@media (max-width: 600px) {
+    .btn-freeform.nav {
+        display: block;
+    }
+}
 
 .btn-freeform.small {
     font-size: var(--f-small)
@@ -146,3 +159,8 @@
     box-shadow: none;
     border: var(--border);
 }
+
+.no-radius {
+    border-radius: 0px !important
+}
+

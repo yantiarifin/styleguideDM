@@ -22,7 +22,7 @@ div.sticky {
     width: 80%;
     margin: 2.0rem auto;
   }
-  li {
+  li.nav-button {
 	font-size: 1rem; 
     line-height: 5rem;
     a:hover {
@@ -42,3 +42,37 @@ div.sticky {
 #nav-mobile {
   z-index: 1400;
 }
+
+.btn-navtoggle {
+  width: 44px;
+  height: 44px;
+  background-color: var(--gray-light);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dm-black);
+  text-align: center;
+  padding: 1rem !important;
+  box-shadow: var(--shadow-small);
+  transition-duration: var(--shadow-transition);
+  cursor:pointer;
+  letter-spacing: -0.5px;
+  border-radius: 0px !important;
+  border: var(--border);
+  position: sticky;
+
+  &:hover {
+      background-color: white;
+  }
+  &:active {
+      box-shadow: var(--shadow-inset);
+      background-color: var(--gray-light);
+      transform: scale(98%);
+  }
+}
+
+.is-active {
+	background-color: #EB483F;
+}
+
+

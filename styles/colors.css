@@ -35,6 +35,22 @@
     color: var(--brand-red);
 }
 
+.action-blue-text {
+    color: var(--action-blue);
+}
+
+.error-red-text {
+    color: var(--error-red);
+}
+
+.success-green-text {
+    color: var(--success-green);
+}
+
+.warning-yellow-text {
+    color: var(--warning-yellow-hover);
+}
+
 .dm-black {
     background-color: var(--dm-black);
 }

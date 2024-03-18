@@ -70,6 +70,7 @@ label {
     line-height: 1.4rem;
     color: var(--gray-darker);
     text-transform: uppercase;
+    margin-bottom: 0px;
 }
 
 .jumbo {

@@ -1,0 +1,138 @@
+:root {
+    --indicator-size: 2rem;
+    --dashtile-size: 16rem;
+}
+
+
+.indicator {
+    width: var(--indicator-size);
+    height: var(--indicator-size);
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    z-index: 10;
+}
+
+.indicator.red {
+
+    background-color: var(--error-red);
+    color: white;
+
+    &::before {
+        font: small 'dm-icons';
+        content: "\e903";
+    }
+}
+
+.indicator.blue {
+    background-color: var(--action-blue);
+    color: white;
+
+    &::before {
+        font: small 'dm-icons';
+        content: "\e905";
+    }
+}
+
+.indicator.yellow {
+    background-color: var(--warning-yellow);
+    color: var(--dm-black);
+
+    &::before {
+        font: small 'dm-icons';
+        content: "\e903";
+    }
+}
+
+.indicator.green {
+    background-color: var(--success-green);
+    color: white;
+
+    &::before {
+        font: small 'dm-icons';
+        content: "\e96d";
+    }
+}
+
+.show-count {
+    &::before {
+        content: none !important;
+    }
+
+    padding: 0.5rem;
+    width: fit-content;
+    min-width: var(--indicator-size);
+    font: medium "MaisonNeueDemi";
+}
+
+.no-absolute {
+    position: relative !important;
+    width: var(--indicator-size);
+    height: var(--indicator-size);
+    right: 0px !important;
+    top: 0px !important;
+}
+
+
+
+.dashtile {
+    height: var(--dashtile-size);
+    min-width: var(--dashtile-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dm-black);
+    box-shadow: var(--shadow-small), var(--shadow);
+    transition: var(--shadow-transition);
+    border-radius: .6rem;
+    cursor: pointer;
+    position: relative;
+    padding: 1.2rem 0.5rem;
+
+    &:hover {
+        background-color: var(--gray-darker);
+    }
+
+    &:active {
+        background-color: var(--dm-black);
+        box-shadow: var(--shadow-inset);
+    }
+
+    .brand {
+        height: 1.6rem;
+        position: absolute;
+        bottom: 1rem;
+    }
+
+    .icon {
+        display: inline;
+        color: var(--gray-dark);
+    }
+
+    .title {
+        position: absolute;
+        left: 0rem;
+        right: 0rem;
+        top: 1.25rem;
+        font-size: 1.8rem;
+        text-align: center;
+        line-height: 1.8rem;
+        color: white;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+}
+
+img.bitmap {
+    height: 8.8rem;
+    margin-top: 2rem;
+    filter: brightness(150%);
+}
